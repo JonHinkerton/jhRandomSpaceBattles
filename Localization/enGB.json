@@ -1,0 +1,16 @@
+{
+    "strings": {
+		"aaa306f2-c8a9-4b78-b977-6f58ca156954": {
+            "Text": "Lord Captain! Upon transitioning to realspace we have found ourselves among a number of starships belonging to the enemies of humanity! The augurs report they are readying their weapons and assuming an attack formation! What are your orders?"
+        },
+		"0f864c45-bff8-4b65-8a78-32ab427559c3": {
+            "Text": "Call the crew to battle stations, we will face them with valor."
+        },
+		"368d304b-41b7-4c20-8b5c-1d1d4d115ff2": {
+            "Text": "Attempt to disengage, we are not prepared for this fight."
+        },
+		"3c5e382f-5c31-43b8-b709-3f155b86e265": {
+            "Text": ""
+        }
+    }
+}

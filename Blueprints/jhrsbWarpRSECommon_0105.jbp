@@ -1,0 +1,51 @@
+{
+  "AssetId": "a125a3866e47448c9cc2096ad0017939",
+  "Data": {
+    "$type": "c8ff73feae580b142a9f43e0c61d7f32, BlueprintDialog",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [],
+    "Author": "Unknown",
+    "Comment": "",
+    "FirstCue": {
+      "Cues": [
+        "!bp_6b9ef81cbf3d4508a20755aede85a38c"
+      ],
+      "Strategy": "First"
+    },
+    "StartPosition": null,
+    "Conditions": {
+      "Operation": "And",
+      "Conditions": []
+    },
+    "StartActions": {
+      "Actions": []
+    },
+    "FinishActions": {
+      "Actions": []
+    },
+    "ReplaceActions": {
+      "Actions": []
+    },
+    "FeatureFreezed": false,
+    "TurnPlayer": true,
+    "TurnFirstSpeaker": true,
+    "IsLockCameraRotationButtons": false,
+    "IsNarratorText": false,
+    "Type": "StarSystemEvent",
+    "Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_EditorComment": {
+      "m_EditorComment": "",
+      "m_Foldout": false
+    }
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

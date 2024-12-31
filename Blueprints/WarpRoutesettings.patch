@@ -1,0 +1,166 @@
+{
+  "DifficultySettingsList": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "Unsafe",
+      "ElementPatch": {
+        "RandomEncounters": {
+          "Weights": [
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_fbeb77083aa3429891f371059d465e88",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_297c395b7a3943f5bdba20cf1a885b23",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_05bf55cbc1dc4162bcb5179faf2ac603",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_fbeb77083aa3429891f371059d465e88",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_fca46e00afe34de294f3885421ccaee3",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_05bf55cbc1dc4162bcb5179faf2ac603",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_77bfb7b48c1343a9a3e9794e3ec9c8ca",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_fca46e00afe34de294f3885421ccaee3",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_a125a3866e47448c9cc2096ad0017939",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_77bfb7b48c1343a9a3e9794e3ec9c8ca",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_4817a4ebf4a948a9839bedbd3fcd4f18",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_a125a3866e47448c9cc2096ad0017939",
+                "Weight": 5
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "Dangerous",
+      "ElementPatch": {
+        "RandomEncounters": {
+          "Weights": [
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_3f96e635a5df4d5a976a6f27d51556e5",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_ba3ab813443e4160a959221f283d79f4",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_4652c8bf2c4a4cdb963cdeacbdc16ffc",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_3f96e635a5df4d5a976a6f27d51556e5",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_8b6ff07ed48b46f0b2d91a4444b45d95",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_4652c8bf2c4a4cdb963cdeacbdc16ffc",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_57a3877498074400af4e972085b657c8",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_8b6ff07ed48b46f0b2d91a4444b45d95",
+                "Weight": 5
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "Deadly",
+      "ElementPatch": {
+        "RandomEncounters": {
+          "Weights": [
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_a9cd32495174492f946c3820c3109311",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_d89e4a285c624929b6b213160dbd4eb7",
+                "Weight": 5
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "Object": "!bp_7ffe09a68bd34641a1cf97942cf30e8f",
+                "Weight": 5
+              },
+              "InsertAfterTarget": {
+                "Object": "!bp_a9cd32495174492f946c3820c3109311",
+                "Weight": 5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
