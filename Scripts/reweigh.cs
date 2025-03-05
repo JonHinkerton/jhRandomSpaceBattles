@@ -46,30 +46,39 @@ namespace jhRandomSpaceBattles
             var state = Game.Instance.Player.GlobalMapRandomGenerationState;
             var customDialogs = ResourcesLibrary.TryGetBlueprint<BlueprintWarpRoutesSettings>("7d1f397ee0624f7da48e87aa813e42f7");
             log.Log("jhrsb: " + customDialogs);
-            foreach (var diff in Enum.GetValues(typeof(SectorMapPassageEntity.PassageDifficulty)))
+            var dc = customDialogs.DifficultySettingsList.FirstOrDefault(ds => ds.Difficulty == (SectorMapPassageEntity.PassageDifficulty)SectorMapPassageEntity.PassageDifficulty.Deadly).RandomEncounters;
+            log.Log("jhrsb: " + dc.Weights.Length);
+            if (dc.Weights.Length > 3)
             {
-                log.Log("jhrsb: " + diff);
-                var dialogs = state.GetRandomEncountersDialogs((SectorMapPassageEntity.PassageDifficulty)diff);
-                log.Log("jhrsb: " + dialogs);
-                var newdialogs = customDialogs.DifficultySettingsList.FirstOrDefault(ds => ds.Difficulty == (SectorMapPassageEntity.PassageDifficulty)diff).RandomEncounters;
-                log.Log("jhrsb: " + newdialogs);
-
-                var initialWeights = (List<WeightPair<BlueprintDialogReference>>)m_InitialWeightsInfo.GetValue(dialogs);
-                log.Log("jhrsb: " + initialWeights);
-                var currentWeights = (List<WeightPair<BlueprintDialogReference>>)m_CurrentWeightsInfo.GetValue(dialogs);
-                log.Log("jhrsb: " + currentWeights);
-
-                foreach (var dia in newdialogs.Weights)
+                foreach (var diff in Enum.GetValues(typeof(SectorMapPassageEntity.PassageDifficulty)))
                 {
-                    log.Log("jhrsb: " + dia);
-                    if (!initialWeights.Any(w => w.Object.Guid == dia.Object.Guid))
+                    log.Log("jhrsb: " + diff);
+                    var dialogs = state.GetRandomEncountersDialogs((SectorMapPassageEntity.PassageDifficulty)diff);
+                    log.Log("jhrsb: " + dialogs);
+                    var newdialogs = customDialogs.DifficultySettingsList.FirstOrDefault(ds => ds.Difficulty == (SectorMapPassageEntity.PassageDifficulty)diff).RandomEncounters;
+                    log.Log("jhrsb: " + newdialogs);
+
+                    var initialWeights = (List<WeightPair<BlueprintDialogReference>>)m_InitialWeightsInfo.GetValue(dialogs);
+                    log.Log("jhrsb: " + initialWeights);
+                    var currentWeights = (List<WeightPair<BlueprintDialogReference>>)m_CurrentWeightsInfo.GetValue(dialogs);
+                    log.Log("jhrsb: " + currentWeights);
+
+                    foreach (var dia in newdialogs.Weights)
                     {
-                        WeightPair<BlueprintDialogReference> wgt = new WeightPair<BlueprintDialogReference>(dia.Object, dia.Weight);
-                        initialWeights.Add(wgt);
-                        currentWeights.Add(wgt);
-                        log.Log("jhrsb: " + wgt);
+                        log.Log("jhrsb: " + dia);
+                        if (!initialWeights.Any(w => w.Object.Guid == dia.Object.Guid))
+                        {
+                            WeightPair<BlueprintDialogReference> wgt = new WeightPair<BlueprintDialogReference>(dia.Object, dia.Weight);
+                            initialWeights.Add(wgt);
+                            currentWeights.Add(wgt);
+                            log.Log("jhrsb: " + wgt);
+                        }
                     }
                 }
+            }
+            else 
+            {
+                log.Log("jhrsb: Patch not installed"); 
             }
         }
     }

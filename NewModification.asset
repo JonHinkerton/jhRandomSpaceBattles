@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Manifest:
     UniqueName: jhRandomSpaceBattles
-    Version: 1.0
+    Version: 1.1
     DisplayName: Random Space Battles
     Description: Adds starship battles to random warp event lists
     Author: jonhinkerton
